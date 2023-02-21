@@ -13,7 +13,7 @@ getAttribute(): This method returns the value of a specified attribute for a DOM
 
 innerHTML: This property allows you to access or change the HTML content of a DOM element. For example, you can use this property to replace the contents of a <div> element with new HTML content.
 
-removeChild(): This method removes a specified child node from a DOM element. For example, you can use this method to remove a specific <li> element from an unordered list.
+removeChild(): This method removes a specified child node from a DOM element. For example, you can use this method to remove a specific element from an unordered list.
 
 These are just a few examples of the many methods available in the DOM API. By using these and other methods, web developers can create dynamic and interactive web pages that respond to user actions and update in real-time.
 
