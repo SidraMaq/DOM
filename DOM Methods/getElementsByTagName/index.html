@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of getElementsByTagName()</title>
+</head>
+<body>
+    <h1>Welcome to my Website</h1>
+    <p>Thanks for visiting my website. Please feel free to explore the various pages and sections.</p>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+
+    <script>
+            //select <li> elements on the page
+            let listItems = document.getElementsByTagName('li');
+            //Loop through the list items and update their content
+            for(let i = 0; i < listItems.length; i++){
+                listItems[i].innerHTML = "Page " + (i+1) + ": " + listItems[i].innerHTML;
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of getAttribute()</title>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+	<p>Thanks for visiting my website. Please feel free to explore the various pages and sections.</p>
+	<img id="myImage" src="img.jpeg" alt="A beautiful mountain landscape" width="300">
+    <p><button onclick="showAlt()">Show Alt Text</button></p>
+    <script>
+        function showAlt(){
+             //select the image element
+             let myImage = document.getElementById('myImage');
+
+            // Get the value of the "alt" attribute using getAttribute()
+            let altText =  myImage.getAttribute('alt');
+
+            //display alt value in alert
+            alert(altText);
+        }
+    </script>
+</body>
+</html>

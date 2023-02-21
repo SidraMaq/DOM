@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of setAttribute()</title>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+	<p>Thanks for visiting my website. Please feel free to explore the various pages and sections.</p>
+	<img id="myImage" src="img.jpeg" alt="A beautiful mountain landscape" width="300">
+	<div><button onclick="changeImage()">Change Image</button></div>
+    <script>
+        function changeImage(){
+            //select the image element
+            let myImage = document.getElementById('myImage');
+
+            //change the image src using setAttribute
+            myImage.setAttribute('src','newImg.jpg');
+            myImage.setAttribute('alt','A stuning sunset over the ocean')
+        }
+    </script>
+</body>
+</html>
